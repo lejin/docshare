@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/uvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/reghead"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="24dp"
+        android:text="User Name" />
+
+    <TextView
+        android:id="@+id/pvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/evsignup"
+        android:layout_below="@+id/evsignup"
+        android:layout_marginTop="28dp"
+        android:text="Phone" />
+
+    <TextView
+        android:id="@+id/reghead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/evsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uvsignup"
+        android:layout_below="@+id/usernamesignup"
+        android:layout_marginTop="22dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/pwvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pvsignup"
+        android:layout_below="@+id/pvsignup"
+        android:layout_marginTop="26dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/usernamesignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reghead"
+        android:layout_below="@+id/reghead"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pvsignup"
+        android:layout_alignLeft="@+id/usernamesignup"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/phonesignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pvsignup"
+        android:layout_alignBottom="@+id/pvsignup"
+        android:layout_alignLeft="@+id/emailsignup"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/passwordsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pwvsignup"
+        android:layout_alignBottom="@+id/pwvsignup"
+        android:layout_alignLeft="@+id/phonesignup"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signupclicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/reghead"
+        android:text="Signup" />
+
+    <TextView
+        android:id="@+id/registermsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signupclicked"
+        android:layout_alignBottom="@+id/signupclicked"
+        android:layout_alignRight="@+id/phonesignup"
+        android:text="" />
+
+</RelativeLayout>

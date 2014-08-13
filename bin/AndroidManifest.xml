@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.docshare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.docshare.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.docshare.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="com.example.docshare.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.docshare.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.docshare.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName="com.example.docshare.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.docshare.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.docshare.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName="com.example.docshare.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.docshare.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.example.docshare.UploadActivity"
+            android:label="@string/title_activity_upload"
+            android:parentActivityName="com.example.docshare.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.docshare.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.example.docshare.DownloadActivity"
+            android:label="@string/title_activity_download"
+            android:parentActivityName="com.example.docshare.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.docshare.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.example.docshare.FollowActivity"
+            android:label="@string/title_activity_follow"
+            android:parentActivityName="com.example.docshare.MenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.docshare.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.example.docshare.SharedActivity"
+            android:label="@string/title_activity_shared" >
+        </activity>
+    </application>
+
+</manifest>
